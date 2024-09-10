@@ -54,11 +54,16 @@
 
 /* #region header */
 
-header > .container{
-    background-color: var(--boo-primary);
+header{
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 100;
+}
+
+header > .container{
+    background-color: var(--boo-primary);
+    
 }
 
 .header-sex{
@@ -165,7 +170,7 @@ main>.container{
         background-color: var(--boo-footer);
     }
 
-    .credits{
+    .credits , .socials{
         color: white;
         margin: 1rem 0;
     }
@@ -179,5 +184,14 @@ main>.container{
         color: white;
         font-size: 0.8rem;
         margin: 0 0.2rem 0 0;
+    }
+
+    .socials>h3{
+        font-size: 1rem;
+    }
+
+    .icons svg{
+        margin: 0.2rem;
+        cursor: pointer;
     }
 /* #endregion footer */
