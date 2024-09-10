@@ -6,6 +6,7 @@
     --boo-red:#ff0000;
     --boo-green:#008000;
     --boo-footer:#1a1a1a;
+    --boo-save:#dbbf0a;
 }
 
 /* sizes */
@@ -25,6 +26,14 @@
 
 .wd32{
     width: 32%;
+}
+
+.wd28{
+    width: 28%;
+}
+
+body{
+    overflow-x:hidden;
 }
 
 /* properties */
@@ -82,7 +91,7 @@ header > .container{
     
 }
 
-.header-logo img{
+.header-logo a>img{
     height: auto;
     width: 40%;
 }
@@ -184,6 +193,100 @@ main>.container{
     color: var(--boo-red);
     font-weight: 600;
 }
+
+/* carosello */
+
+.carousel {
+    position: relative;
+    width: 40%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 600px;
+    display: block;
+}
+
+input[name="carousel"] {
+    display: none;
+}
+
+#slide1:checked ~ .carousel-slides {
+    transform: translateX(0%);
+}
+
+#slide2:checked ~ .carousel-slides {
+    transform: translateX(-100%);
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 1;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* /fine carosello */
+
+.description>h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.buy{
+    flex-direction: column;
+}
+
+.box{
+    padding: 2rem;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.box>svg{
+    width: 4rem; 
+}
+
+.buy-now{
+    background-color: var(--boo-green);
+    color: white;
+    border: 1px solid var(--boo-green);
+}
+
+.save-for-late{
+    background-color: var(--boo-save);
+    color: white;
+    border: 1px solid var(--boo-save);
+}
+
 /* #endregion main */
 
 /* #region footer */
