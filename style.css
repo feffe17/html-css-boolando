@@ -1,6 +1,83 @@
+/* #region assets */
+
+/* colors */
 :root{
-    boo-primary:#ff6900;
-    boo-red:#ff0000;
-    boo-green:#008000;
-    boo-footer:#1a1a1a;
+    --boo-primary:#ff6900;
+    --boo-red:#ff0000;
+    --boo-green:#008000;
+    --boo-footer:#1a1a1a;
 }
+
+/* sizes */
+.container{
+    width: 100vw;
+}
+
+.wd70{
+    width: 70%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* properties */
+
+.df{
+    display: flex;
+}
+
+.aic{
+    align-items: center;
+}
+
+.jcc{
+    justify-content: center;
+}
+
+/* #endregion assets */
+
+
+/* #region header */
+
+header > .container{
+    background-color: var(--boo-primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header-sex{
+    justify-content: flex-start;
+}
+
+.header-sex a{
+    text-decoration: none;
+    color: white;
+    margin: 2rem 0.6rem 2rem 0;
+    
+}
+
+.header-logo{
+    justify-content: center;
+    
+}
+
+.header-logo img{
+    height: auto;
+    width: 40%;
+}
+
+.header-user{
+    justify-content: flex-end;
+    color: white;
+}
+
+.header-user svg{
+    margin: 2rem 0 2rem 0.6rem;
+    cursor: pointer;
+}
+
+/* #endregion header */
