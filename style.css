@@ -158,3 +158,26 @@ main>.container{
     font-weight: 600;
 }
 /* #endregion main */
+
+/* #region footer */
+
+    footer>.container{
+        background-color: var(--boo-footer);
+    }
+
+    .credits{
+        color: white;
+        margin: 1rem 0;
+    }
+
+    .credits>h3{
+        font-size: 1.2rem;
+    }
+
+    .legals a{
+        text-decoration: none;
+        color: white;
+        font-size: 0.8rem;
+        margin: 0 0.2rem 0 0;
+    }
+/* #endregion footer */
