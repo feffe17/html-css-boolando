@@ -23,6 +23,10 @@
     box-sizing: border-box;
 }
 
+.wd32{
+    width: 32%;
+}
+
 /* properties */
 
 .df{
@@ -37,6 +41,14 @@
     justify-content: center;
 }
 
+.jcsb{
+    justify-content: space-between;
+}
+
+.row{
+    margin-top: 3rem;
+}
+
 /* #endregion assets */
 
 
@@ -44,7 +56,7 @@
 
 header > .container{
     background-color: var(--boo-primary);
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
 }
@@ -81,3 +93,51 @@ header > .container{
 }
 
 /* #endregion header */
+
+/* #region main */
+
+main>.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product{
+    position: relative;
+}
+
+.save-article{
+    background-color: white;
+    position: absolute;
+    font-size: 2rem;
+    right: 0;
+    top: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.save-article:hover{
+    color: var(--boo-red);
+}
+
+.info-article{
+    position: absolute;
+    left: 0;
+    bottom: 2rem;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.discount{
+    background-color: var(--boo-red);
+    padding: 0.4rem;
+    margin-right: 0.3rem;
+}
+
+.sustainability{
+    background-color: var(--boo-green);
+    padding: 0.4rem;
+}
+/* #endregion main */
