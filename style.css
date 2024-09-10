@@ -140,4 +140,21 @@ main>.container{
     background-color: var(--boo-green);
     padding: 0.4rem;
 }
+
+.brand , .price{
+    font-size: 0.8rem;
+}
+
+.brand{
+    font-weight: 100;
+}
+
+.art-name{
+    font-weight: 600;
+}
+
+.price > span{
+    color: var(--boo-red);
+    font-weight: 600;
+}
 /* #endregion main */
