@@ -215,7 +215,7 @@ main>.container{
 
 .carousel-slide img {
     width: 100%;
-    height: 600px;
+    height: 500px; 
     display: block;
 }
 
